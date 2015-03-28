@@ -41,9 +41,11 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  # bootsrtap  suulgav
+  # bootsrtap - site-iin buh designd ashiglav
   gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
-  # font awesome suulgav
+  # font awesome - logond ashiglav.
   gem "font-awesome-rails"
+  # simple form - sign up, in, update zereg formuudad hereglene
+  gem 'simple_form'
 end
 

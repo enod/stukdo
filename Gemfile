@@ -47,5 +47,7 @@ group :development, :test do
   gem "font-awesome-rails"
   # simple form - sign up, in, update zereg formuudad hereglene
   gem 'simple_form'
+  # devise 
+  gem 'devise'
 end
 

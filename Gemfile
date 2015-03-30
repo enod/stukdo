@@ -49,5 +49,7 @@ group :development, :test do
   gem 'simple_form'
   # devise 
   gem 'devise'
+  # link detector like youtube, image , vimeo etc
+  gem "auto_html"
 end
 

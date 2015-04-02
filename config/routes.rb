@@ -5,7 +5,8 @@ Rails.application.routes.draw do
     end
   end
 
-  devise_for :users
+  #omniauth
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   # get 'pages/home'
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -17,6 +18,11 @@ Rails.application.routes.draw do
   get 'about' => "pages#about"
 
   get 'test' => "pages#test"
+
+  devise_scope :user do
+    get 'sign_out', :to => 'devise/sessions#destroy' #, :as => :destroy_user_session
+  end  
+  
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

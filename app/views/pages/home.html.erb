@@ -5,6 +5,10 @@
 <h2><i class="fa fa-list-alt"></i> 2DoListApp</h2>
 <p class="small">This is my smart to do list RoR app. Well, actually it's just another simplified Trello clone lol</p>
 <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-md btn-block" %>
+</br>
+
+
+
 </div>
 </div>
 </div>
@@ -20,3 +24,27 @@
   ga('send', 'pageview');
 
 </script>
+
+<body> 
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '446545552176707',
+      xfbml      : true,
+      version    : 'v2.3'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+</body>

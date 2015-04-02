@@ -61,4 +61,6 @@ end
   # link detector like youtube, image , vimeo etc
   gem "auto_html"
 
+  ruby '2.2.0'
+
 
